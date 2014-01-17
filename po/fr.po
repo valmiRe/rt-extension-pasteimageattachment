@@ -1,0 +1,27 @@
+#: share/html/Ticket/Elements/AddAttachments:10
+msgid "Paste an image"
+msgstr "Coller une image"
+
+#: share/html/Ticket/Elements/AddAttachments:14
+msgid "Paste"
+msgstr "Coller"
+
+#: share/html/Ticket/Elements/AddAttachments:16
+msgid "Clear"
+msgstr "Effacer"
+
+#: share/html/Ticket/Elements/AddAttachments:17
+msgid "Go"
+msgstr "Go"
+
+#: share/html/Ticket/Elements/AddAttachments:21
+msgid "Attach file"
+msgstr "Attacher un fichier"
+
+#: share/html/Ticket/Elements/AddAttachments:18
+msgid "File name"
+msgstr "Nom du fichier"
+
+
+
+

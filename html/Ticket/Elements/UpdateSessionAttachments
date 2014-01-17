@@ -1,0 +1,17 @@
+<& /Ticket/Elements/ListSessionsAttachments, %ARGS &>
+
+% $m->abort();
+<%INIT>
+#$RT::Logger->debug("/Ticket/ListSessionsAttachments");
+
+ProcessAttachments(ARGSRef => \%ARGS);
+
+#my $attachments;
+#if ( exists $session{'Attachments'}{ $Token } && keys %{ $session{'Attachments'}{ $Token } } ) {
+#    $attachments = $session{'Attachments'}{ $Token };
+#}
+
+</%INIT>
+<%ARGS>
+$Token => ''
+</%ARGS>

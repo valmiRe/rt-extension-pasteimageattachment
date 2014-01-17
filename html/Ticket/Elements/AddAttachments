@@ -1,0 +1,36 @@
+<tr>
+  <td class="label" valign="top"><&|/l&>Attached file</&>:</td>
+  <td>
+    <div id='ListSessionsAttachments'>
+<& /Ticket/Elements/ListSessionsAttachments, %ARGS &>
+    </div>
+
+
+  <div id="PasteAttachmentImage"><table><tr>
+   <td>
+    <span class="label"><&|/l&>Paste an image</&> (Ctrl-V) :</span>
+    <br/>
+    <div id="PasteImage" contenteditable="true" style="min-height:3em;width:300px;overflow:auto;background:#EEEEEE;display:inline-block"></div>
+  </td>
+  <td>
+    <&|/l&>File name</&> :<input id="PasteImageName" name="PasteImageName" size="20"/>
+    </br>
+    <span id="pasteButtonContainer">
+      <input id="pasteButton" class="button" type="button" value="<&|/l&>Paste</&>">
+    </span>
+    <input id="clearButton" class="button" type="button" value="<&|/l&>Clear</&>">
+    <input id="uploadImageButton" class="button" type="button" value="<&|/l&>Go</&>">
+   </td>
+  </tr></table></div>
+    
+    <br/><span class="label"><&|/l&>Attach file</&> :</span>
+    <br/><input name="Attach" type="file" id="fileUpload" />
+    <input id="uploadFileButton" class="button" type="button" value="<&|/l&>Add More Files</&>" />
+    <input type="hidden" class="hidden" name="AddMoreAttach" value="0" />
+    <input type="hidden" class="hidden" name="UpdateAttach" value="0" />
+    <script type="text/javascript" src="/static/js/addattacments.js"></script>
+</td></tr>
+% $m->callback( %ARGS, CallbackName => 'End' );
+<%ARGS>
+$Token => ''
+</%ARGS>
