@@ -21,8 +21,8 @@ jQuery(function() {
       jQuery('#uploadFileButton').click( function() { uploadFile(); } );
     } else {
       // fall back to original submit form
+      jQuery("#uploadFileButton").attr('name','AddMoreAttach');
       jQuery('#uploadFileButton').click( function() { 
-        jQuery("input[name=UpdateAttach]").val('1')
         jQuery("input[name=AddMoreAttach]").val('1')
         formNode.submit();
       });

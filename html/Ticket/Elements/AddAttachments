@@ -26,7 +26,6 @@
     <br/><span class="label"><&|/l&>Attach file</&> :</span>
     <br/><input name="Attach" type="file" id="fileUpload" />
     <input id="uploadFileButton" class="button" type="button" value="<&|/l&>Add More Files</&>" />
-    <input type="hidden" class="hidden" name="AddMoreAttach" value="0" />
     <input type="hidden" class="hidden" name="UpdateAttach" value="0" />
     <script type="text/javascript" src="/static/js/addattacments.js"></script>
 </td></tr>
